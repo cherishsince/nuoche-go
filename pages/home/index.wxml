@@ -1,0 +1,58 @@
+<view class="container home-con">
+  <view class="experience">
+    <image src="../../images/banner.png" class="back-img" mode="aspectFit" />
+    <view class="exper-btn" bindtap="redirectToHome"></view>
+  </view>
+  
+  <view class="code-list">
+    <view class="flex-left home-receice-now" bindtap="redirectToHome">
+      <image src="../../images/code-back-3.png" class="inner-img" mode="aspectFill" />
+      <text class="middle-title">立即领取挪车码</text>
+      <text class="middle-desc">IMMEDIATELY RECEIVE</text>
+    </view>
+    <view class="flex-right home-open-scane" bindtap="qrCodeScan">
+      <image src="../../images/code-back-4.png" class="inner-img" mode="aspectFill" />
+      <text class="middle-title">扫一扫</text>
+      <text class="middle-desc">CAR YARDS</text>
+    </view>
+  </view>
+  <view class="menu-list">
+    <view class="menu-item" bindtap="toInstructions">
+      <icon class="iconfont icon-shiyongshuoming desc-img"></icon>
+      <text class="menu-label">使用说明</text>
+      <text class="menu-text">快速直接上手</text>
+    </view>
+    <button open-type="share" class="menu-item menu-item-right home-open-share">
+      <icon class="iconfont icon-fenxiang desc-img"></icon>
+      <text class="menu-label">分享</text>
+      <text class="menu-text">一键分享挪车码</text>
+    </button>
+    <button open-type="feedback" class="menu-item home-open-feekback">
+      <icon class="iconfont icon-yijianfankui desc-img"></icon>
+      <text class="menu-label">问题反馈</text>
+      <text class="menu-text">信息随时反馈</text>
+    </button>
+    <button open-type='contact' class="menu-item menu-item-right home-open-concat">
+      <icon class="iconfont icon-lianxikefu desc-img"></icon>
+      <text class="menu-label">联系客服</text>
+      <text class="menu-text">专业在线解决</text>
+    </button>
+  </view>
+  <!-- qrCode modal -->
+  <view class="fixed-group" wx:if="{{isShowBindQrCode}}">
+    <view class="area">
+      <scroll-view scroll-y="true" style="height: 800rpx;" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll">
+        <image src="../../images/close-bold.png" class="guanbi" bindtap="hideBinQrCode" />
+        <text class="fixed-title">选择需要“绑定的车”</text>
+        <view class="car-list">
+          <view class="car-item" wx:for="{{list}}" wx:for-item="item" 
+          bindtap="bindCar" data-id="{{item.id}}">
+            <text class="car-item-carNo">{{item.carNoPrefix}}{{item.carNo}}</text>
+            <!-- <text>{{item.mobile1}}</text> -->
+          </view>
+        </view>
+      </scroll-view>
+    </view>
+  </view>
+
+</view>

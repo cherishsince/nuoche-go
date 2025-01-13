@@ -1,0 +1,54 @@
+.code-list{
+  background: #FFFFFF;
+  box-shadow: 0 3rpx 8rpx 0 rgba(0, 0, 0, 0.05);
+  border-radius: 14rpx;
+  border: 1rpx solid #D8D8D8;
+  margin: 30rpx 30rpx 0;
+  padding: 40rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.code-list .scan-img{
+  width: 160rpx;
+  height: 160rpx;
+  border-radius: 10rpx;
+  overflow: hidden;
+  display: block;
+}
+.code-list .scan-flex{
+  margin-left: 30rpx;
+  flex: 1;
+  width: 0;
+}
+.code-list .scan-name{
+  font-size: 28rpx;
+  color: #333333;
+  line-height: 44rpx;
+  font-weight: 700;
+}
+.code-list .scan-other{
+  margin-top: 12rpx;
+  font-weight: normal;
+}
+.code-list .scan-other .item{
+  display: inline-block;
+  margin-right: 20rpx;
+}
+.code-list .scan-label{
+  margin-top: 8rpx;
+}
+.code-list .scan-label .label{
+  display: inline-block;
+  background: rgba(76, 156, 250, 0.1);
+  height: 44rpx;
+  line-height: 44rpx;
+  font-size: 22rpx;
+  color: #4C9CFA;
+  border-radius: 22rpx;
+  padding: 0 20rpx;
+  margin-right: 20rpx;
+}
+.code-list .scan-label .label:last-child{
+  margin-right: 0;
+}

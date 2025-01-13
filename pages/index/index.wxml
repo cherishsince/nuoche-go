@@ -1,0 +1,31 @@
+<view class="container">
+  <view class="code-list" wx:for="{{list}}" wx:key="*this" bindtap="bindToDetail" data-item="{{item}}">
+    <image src="{{item.qrCode.imageUrl}}" mode="aspectFill" class="scan-img" />
+    <view class="scan-flex">
+     <view class="ellise scan-name">{{item.carNoPrefix || ''}} {{item.carNo || ''}}</view>
+      <view class="ellise scan-name scan-other">
+        <text class="item">{{item.nickname || ''}}</text>
+        <text class="item" wx:if="{{item.isNotDisturb === 1 || item.isPrivacy === 1}}">{{item.mobile1 || ''}}</text>
+      </view>
+     <view class="ellise scan-label" wx:if="{{item.isNotDisturb === 1 || item.isPrivacy === 1}}">
+      <text class="label" wx:if="{{item.isPrivacy === 1}}">隐私安全</text>
+      <text class="label" wx:if="{{item.isNotDisturb === 1}}">免打扰</text>
+     </view>
+     <view class="ellise scan-name scan-other" wx:else>
+      <text class="item">{{item.mobile1 || ''}}</text>
+      <text class="item">{{item.mobile2 || ''}}</text>
+     </view>
+    </view>
+  </view>
+  <!-- <view class="code-list">
+    <image src="../../images/code.jpg" mode="aspectFill" class="scan-img" />
+    <view class="scan-flex">
+     <view class="ellise scan-name">湘A 77876</view>
+     <view class="ellise scan-name scan-other">
+      <text class="item">邓思权</text>
+      <text class="item">13258756879</text>
+     </view>
+     
+    </view>
+  </view> -->
+</view>
