@@ -1,8 +1,6 @@
 # 扫码挪车 “小程序”
 
-<img src="./assets/07-6734925.jpg" width="350" height="auto" style="float: left;">
-
-
+<img src="./assets/07-6734925.jpg" width="350" height="auto">
 
 **一、对车主方便快捷**
 
@@ -19,13 +17,11 @@
 
 ## UI 展示
 
-<img src="./assets/IMG_5262.PNG" width="350" height="auto" style="float: left;">
+<img src="./assets/IMG_5262.PNG" width="350" height="auto">
 
-<img src="./assets/IMG_5263.PNG" width="350" height="auto" style="float: left;">
+<img src="./assets/IMG_5263.PNG" width="350" height="auto">
 
-
-
-<img src="./assets/IMG_5264.PNG" width="350" height="auto" style="float: left;">
+<img src="./assets/IMG_5264.PNG" width="350" height="auto" >
 
 
 

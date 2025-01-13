@@ -1,0 +1,30 @@
+.tabbar-con{
+    position: fixed;
+    background-color: #FFF;
+    z-index: 9999;
+    border-top: 1rpx solid #DADADA;
+    height: 100rpx;
+    display: flex;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    align-items: center;
+}
+.tabbar-con .tab-item{
+    flex: 1;
+    text-align: center;
+}
+.tabbar-con .tab-icon{
+    font-size: 38rpx;
+    color: #666666;
+    display: block;
+}
+.tabbar-con .checked .tab-icon{
+   color: #4C9CFA;
+}
+.tabbar-con .tab-text{
+    color: #6E6E6E;
+    font-size: 26rpx;
+    display: block;
+    padding-top: 9rpx;
+}

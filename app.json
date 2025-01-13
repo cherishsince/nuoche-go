@@ -1,0 +1,48 @@
+{
+  "pages": [
+    "pages/home/index",
+    "pages/privacyNumber/index",
+    "pages/outside/index",
+    "pages/mine/index",
+    "pages/instructions/instructions",
+    "pages/codeDetail/index",
+    "pages/index/index",
+    "pages/receiveCode/index",
+    "pages/question/index",
+    "pages/about/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "扫码挪车",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "color": "#6E6E6E",
+    "selectedColor": "#6E6E6E",
+    "backgroundColor": "#FFF",
+    "borderStyle": "black",
+    "list": [
+      {
+        "selectedIconPath": "./images/tab/home-active.png",
+        "iconPath": "./images/tab/home.png",
+        "pagePath": "pages/home/index",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "./images/tab/code-active.png",
+        "iconPath": "./images/tab/code.png",
+        "pagePath": "pages/question/index",
+        "text": "常见问题"
+      },
+      {
+        "selectedIconPath": "./images/tab/mine-active.png",
+        "iconPath": "./images/tab/mine.png",
+        "pagePath": "pages/mine/index",
+        "text": "我的"
+      }
+    ]
+  }
+}

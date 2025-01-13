@@ -1,0 +1,14 @@
+<view class="tabbar-con">
+    <view class="tab-item {{active === 'home' && 'checked'}}" data-url="/pages/home/index" bindtap="redirectToPage">
+        <icon class="iconfont {{active === 'home' ? 'icon-shouye' : 'icon-a-shouyexian'}} tab-icon"></icon>
+        <text class="tab-text">首页</text>
+    </view>
+    <view class="tab-item {{active === 'code' && 'checked'}}" data-url="/pages/question/index" bindtap="redirectToPage">
+        <icon class="iconfont {{active === 'code' ? 'a-erweimamian' : 'icon-erweima'}} tab-icon"></icon>
+        <text class="tab-text">常见问题</text>
+    </view>
+    <view class="tab-item {{active === 'mine' && 'checked'}}" data-url="/pages/mine/index" bindtap="redirectToPage">
+        <icon class="iconfont {{active === 'mine' ? 'a-wodemian' : 'icon-wode'}} tab-icon"></icon>
+        <text class="tab-text">我的</text>
+    </view>
+</view>
